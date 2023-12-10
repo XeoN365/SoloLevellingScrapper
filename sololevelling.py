@@ -9,7 +9,6 @@ class Scrapper:
         chrome_options = Options()
         chrome_options.add_argument("--ignore-certificate-errors")
         self.solo_levelling_website = "https://sololeveling-manwha.com/"
-        self.folder_location = "./chapters/"
         self.driver = webdriver.Chrome(options=chrome_options)
         self.driver.implicitly_wait(5)
         self.chapter_list = dict()
